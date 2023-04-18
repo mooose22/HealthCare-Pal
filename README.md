@@ -1,10 +1,10 @@
-#Welcome to the HealthCare Pal App!
+Welcome to the HealthCare Pal App!
 
-#Description
+Description
 
 HealthCare Pal is a web-based application that primarily utilizes backend technologies such as node.js, express, nodemailer, handlebars, and MySQL. On the front-end, it uses JavaScript and Bootstrap CDN. The primary purpose of the application is to help patients find medical services and their associated costs, as well as the providers offering those services. In addition, providers can use the application to post information about the services they offer, including the associated costs, and can edit this information as needed. Overall, HealthCare Pal serves as a useful tool for both patients and providers in the healthcare industry.
 
-#Installation
+Installation
 
 1. To get started with the application, navigate to the repository called "healthcare-pal" on GitHub.
 
@@ -18,6 +18,6 @@ HealthCare Pal is a web-based application that primarily utilizes backend techno
 
 6. Once the application is deployed, users can access it by navigating to the Heroku app URL in their web browser.
 
-#Usage
+Usage
 
 Medical service pricing is often concealed from the public, leading to a lack of transparency in the patient-provider relationship. HealthCare Pal seeks to change that by providing prospective patients with access to information on medical services and their associated costs before they make an appointment with a medical provider. This feature allows patients to gain a better understanding of how much a medical service will cost them, and can help them make more informed decisions about their healthcare options. By promoting transparency in medical service pricing, HealthCare Pal aims to improve the overall patient experience and provide patients with greater control over their healthcare decisions.
