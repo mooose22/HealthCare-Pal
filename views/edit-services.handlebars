@@ -1,0 +1,44 @@
+<article>
+    <a href="/dashboard"> &larr; Back to dashboard</a>
+    <h2>
+        Edit Service
+    </h2>
+    <form class="edit-services-form">
+        <p>Name of Service</p>
+        <div>
+            <input name="service_name" type="text" value="{{services.service_name}}" />
+        </div>
+        <p>Service Type</p>
+        <div>
+            <input name="service_category" type="text" value="{{services.service_category}}" />
+        </div>
+        <p>Cost</p>
+        <div>
+            <input name="cost" type="text" value="{{services.cost}}" />
+        </div>
+        <div>
+            created on {{format_date services.created_at}}
+            |
+            <a href="/services/{{services.id}}">{{services.comments.length}} {{format_plural "note"
+                provider.comments.length}}</a>
+        </div>
+        <button type="submit">Save service</button>
+        <button type="button" class="delete-services-btn">Delete service</button>
+    </form>
+</article>
+
+<form class="comment-form">
+    <div>
+        <textarea name="comment-body"></textarea>
+    </div>
+
+    <div>
+        <button type="submit">add note</button>
+    </div>
+</form>
+
+{{> comments services.comments}}
+
+<script src="/javascript/edit-services.js"></script>
+<script src="/javascript/delete-services.js"></script>
+<script src="/javascript/comment.js"></script>

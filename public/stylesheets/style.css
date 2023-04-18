@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'EB Garamond', serif;
+    color: #333;
+}
+
+header {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 2vw 0;
+}
+
+nav {
+    padding-left: 5%;
+    margin: 2vw 0;
+}
+
+header a {
+    font-size: 125%;
+    padding: 0 15px;
+}
+
+main {
+    flex: 1;
+    padding: 2% 4%;
+}
+
+article {
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}
+
+.card-header {
+    background-color: #f6fbff;
+}
+
+div .meta {
+    padding: 1vw;
+}
+
+a {
+    text-decoration: none;
+    color: #225ca3;
+    font-weight: bold;
+    transition: color .1s;
+}
+
+a:hover {
+    color: #3486eb;
+}
+
+button {
+    background-color: #225ca3;
+    border: 0;
+    padding: 1%;
+    color: white;
+    font-weight: bold;
+    transition: background-color .1s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #3486eb;
+}
+
+textarea,
+input {
+    padding: .5%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+    border: 1px solid #3486eb;
+}
+
+textarea {
+    min-width: 40%;
+    min-height: 100px;
+}
+
+form div {
+    margin-bottom: 2%;
+}
+
+form label {
+    display: block;
+}
+
+.btn-no-style {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: #225ca3;
+    font-size: 125%;
+    font-weight: bold;
+    transition: color .1s;
+    margin-left: 25px;
+    margin-right: 30px;
+}
+
+.btn-no-style:hover {
+    background: none;
+    color: #3486eb;
+}
+
+.edit-link {
+    display: block;
+    margin: -1.5% 0 2% 0;
+    padding: 15px 0;
+}
+
+.comment-form {
+    margin-bottom: 5%;
+}
+
+.comment {
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+.comment:nth-child(odd) {
+    background-color: #fff5eb;
+}
+
+.comment .meta {
+    font-size: 90%;
+    margin-bottom: .5%;
+    opacity: .6;
+}
+
+footer {
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    font-size: 110%;
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 790px) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    h1 {
+        margin: 0;
+    }
+    nav a {
+        width: auto;
+        margin: 0;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 0;
+    }
+    header a {
+        padding: 0px 25px;
+    }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+header {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+header h1 a {
+    display: block;
+}
+h2 {
+    text-align: center;
+}
+header a {
+    padding: 0px 25px;
+}
+.row {
+    margin-left: -12vw;
+}
+.title {
+    text-align: center;
+}
+.meta {
+    text-align: center;
+    font-size: 3.6vw;
+}
+}

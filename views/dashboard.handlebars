@@ -1,0 +1,35 @@
+<section>
+    <h2>Share Service Information</h2>
+
+    <form class="new-service-form">
+        <div>
+            <label for="service_name">Name of Service</label>
+            <input type="text" id="service_name" name="service_name" />
+        </div>
+        <div>
+            <label for="service_category">Type of Service</label>
+            <input type="text" id="service_category" name="service_category" />
+        </div>
+        <div>
+            <label for="cost">Service Cost:</label>
+            <input type="text" id="cost" name="cost" />
+        </div>
+        <button type="submit">Create</button>
+    </form>
+</section>
+
+{{#if services.length}}
+<section>
+    <h2>Your Services</h2>
+    <ol>
+        {{#each services as |service|}}
+        <li>
+            {{> service-info service}}
+            <a href="/dashboard/edit/{{service.id}}" class="edit-link">Edit service</a>
+        </li>
+        {{/each}}
+    </ol>
+</section>
+{{/if}}
+
+<script src="/javascript/add-services.js"></script>

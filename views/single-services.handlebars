@@ -1,0 +1,19 @@
+{{> service-info services}}
+
+{{#if loggedIn}}
+<form class="comment-form">
+    <div>
+        <textarea name="comment-body"></textarea>
+    </div>
+
+    <div>
+        <button type="submit">add note</button>
+    </div>
+</form>
+{{/if}}
+
+{{> comments services.comments}}
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+{{/if}}
